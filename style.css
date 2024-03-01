@@ -5,8 +5,14 @@ body {
    background-color: aliceblue;
 }
 
+div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(223, 243, 235);
+	margin: 50px auto;
+	padding: 50px;
+}
 
-div, form {
+form {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(223, 243, 235);
 	max-width: 450px;

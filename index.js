@@ -10,7 +10,7 @@ function displaySongInfo(event) {
      const yearListen = formData.elements["year"].value
      const desc = formData.elements["description"].value
 
-     document.getElementById("video").setAttribute("src", link)
+     document.getElementById("iframe").innerHTML = link
      document.querySelector("#para1").innerHTML += songTitle
      document.querySelector("#para2").innerHTML += artist
      document.querySelector("#para3").innerHTML += yearListen
