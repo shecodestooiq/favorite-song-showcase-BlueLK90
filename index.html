@@ -3,10 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Favorite Song Showcase</title>
   </head>
-
   <body>
+    <section id="mainForm" >
+      
+      <form id="songForm" onsubmit="displaySongInfo(event)">
+        <h2>Here you can share your Favorite Song</h2>
+        <h3>Tell me more about it:</h3>
+
+        <label for="title">Song Title:</label><br>
+        <input type="text" name="title" id="title" minlength="3"><br>
+
+        <label for="artist">Artist Name:</label><br>
+        <input type="text" name="artist" id="artist"><br>
+
+        <label for="songLink">Youtube Link:</label><br>
+        <textarea name="url" name="songLink" id="songLink" cols="45" rows="2" placeholder="Place Youtube Link here ..."></textarea><br>
+        
+        <label for="year">When did you hear it for the first time?</label><br>
+        <input type="number" name="year" id="year" minlength="4" size="4"><br>
+
+        <label for="description">Share your thoughts:</label><br>
+        <textarea name="description" id="description" cols="45" rows="5" placeholder="Tell me why it's your favorite ..."></textarea><br>
+        
+        <button type="submit">Share</button>
+      </form>
+      </section>
+
+      <div id="showSharedSong" class="hide">
+        <video id="video" controls width="400" src=""></video> 
+        <br><p id="para1">*Song: </p><p id="para2">By </p>
+        <p id="para3">*Memoires from </p>
+        <p id="para4">*My thoughts: </p>
+      </div>
+
     <script src="index.js"></script>
   </body>
 </html>
