@@ -16,15 +16,9 @@ function displaySongInfo(event) {
      document.querySelector("#para3").innerHTML += yearListen
      document.querySelector("#para4").innerHTML += desc
 
-
-
-   
-    /*document.getElementById("para2").innerHTML = "Hey Love it"*/
 }
 
 module.exports = {
     displaySongInfo: displaySongInfo,
 };
 
-
-/*aliceBlue*/
